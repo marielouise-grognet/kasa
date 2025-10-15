@@ -5,3 +5,11 @@
   font-family: 'Montserrat';
 
 }
+
+.footer {
+  background-color: black;
+  height: 209px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

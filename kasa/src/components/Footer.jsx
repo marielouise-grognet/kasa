@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom'
 import logo from '../assets/LOGOwhite.png'
+import '../index.css'
 
 function Footer() {
   return (
-    <div style = {{
-        backgroundColor : '#000'
-    }}>
+    <div className="footer">
         <Link to ="/">
             <img src={logo} alt="Logo kasa" />
         </Link>
       <p style ={{
         color:'#fff'
-      }}>C 2020 Kasa. All rights reserved
+      }}>© 2020 Kasa. All rights reserved
       </p>
     </div>
   )
