@@ -1,0 +1,41 @@
+.slideshow {
+    max-width: 1240px;
+    height: 415px;
+    position: relative; // Le parent des flèches
+    margin : 0 40px;
+
+    .slide {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+    }
+
+    .arrowLeft,
+    .arrowRight {
+        position: absolute;
+        top: 50%; // Centré verticalement
+        transform: translateY(-50%); // Ajuste pour centrer exactement
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        z-index: 10; // Toujours au-dessus des images
+        background: none; // Supprime le fond
+        border: none; // Supprime la bordure
+        outline: none; // Supprime le contour au focus
+
+    }
+
+    .arrowLeft {
+        left: 10px; // Décalage à gauche
+    }
+
+    .arrowRight {
+        right: 10px; // Décalage à droite
+    }
+}

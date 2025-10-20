@@ -1,0 +1,28 @@
+.descriptionBox {
+    display: flex;
+
+    text-align: left;
+    margin: 0 40px;
+
+
+
+
+
+    h1 {
+        color: #FF6060;
+        font-size: 36px;
+        font-weight: 500;
+
+
+
+    }
+
+}
+
+.collapses {
+    display: flex;
+
+    .collapse {
+        width : 50%;
+    }
+}
