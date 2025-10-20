@@ -21,6 +21,8 @@ function Slideshow({ images }) {
                 <>
                     <button className="arrowLeft" onClick={prevSlide}>&#10094;</button>
                     <button className="arrowRight" onClick={nextSlide}>&#10095;</button>
+                    <div className="counter">{currentIndex + 1} / {length}</div>
+
                 </>
             )}
 

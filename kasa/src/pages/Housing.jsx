@@ -1,12 +1,15 @@
-import { useParams, Navigate } from 'react-router-dom';
-import housingList from '../data/data.js';
-import Slideshow from '../components/Slideshow.jsx';
-import Collapse from '../components/Collapse.jsx';
-import '../sass/housing.scss';
+import { useParams, Navigate } from 'react-router-dom'
+import housingList from '../data/data.js'
+import Slideshow from '../components/Slideshow.jsx'
+import Collapse from '../components/Collapse.jsx'
+import '../sass/housing.scss'
 
 function Housing() {
-  const { id } = useParams();
-  const housing = housingList.find(item => item.id === id);
+  const { id } = useParams()
+  const housing = housingList.find(item => item.id === id)
+  const range = [1, 2, 3, 4, 5]
+
+
 
   if (!housing) return <Navigate to="/error" />;
 
@@ -18,15 +21,24 @@ function Housing() {
         <div className="titleTownSpecificities">
           <h1>{housing.title}</h1>
           <p>{housing.location}</p>
-          <ul className="tags">
+          <div className="tags">
             {housing.tags.map((tag, i) => (
-              <li key={i}>{tag}</li>
+              <span key={i} className="tag">{tag}</span>
             ))}
-          </ul>
+          </div>
         </div>
-        <div className="hostRating">
-          <p>Hôte : {housing.host.name}</p>
-          <p>Rating : {housing.rating}</p>
+        <div className="hostAndRating">
+          <div className="hostIdentity">
+            <p className='hostName'>{housing.host.name}</p>
+            <img src={housing.host.picture} className='hostPicture'></img>
+          </div>
+          <div className="rating">
+            {range.map((star) => (
+              <span key={star} className={star <= housing.rating ? "star filled" : "star"}>★</span>
+            ))}
+          </div>
+
+
         </div>
       </div>
 
@@ -39,7 +51,7 @@ function Housing() {
           ))}
         />
       </div>
-      
+
     </div>
   )
 }

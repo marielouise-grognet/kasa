@@ -1,19 +1,21 @@
 .navbar {
-display: flex;
-justify-content: space-between;
-margin : 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 40px;
 
   .nav-links {
     display: flex;
     gap: 20px;
+    height:20px;
 
     a {
       text-decoration: none;
       color: #000;
 
-      &:hover {
-        color: #ff5a5f;
+      &.active {
+        border-bottom: 1px solid black; 
       }
+
     }
   }
 }
