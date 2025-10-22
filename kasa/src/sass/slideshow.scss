@@ -1,8 +1,9 @@
+
 .slideshow {
     max-width: 1240px;
     height: 415px;
-    position: relative; // Le parent des flèches
-    margin : 0 40px;
+    position: relative;
+    margin: 0 40px;
 
     .slide {
         width: 100%;
@@ -16,34 +17,59 @@
         }
     }
 
-    .arrowLeft,
-    .arrowRight {
+    .arrow-left,
+    .arrow-right {
         position: absolute;
-        top: 50%; 
-        transform: translateY(-50%); 
+        top: 50%;
+        transform: translateY(-50%);
         font-size: 2rem;
         color: white;
         cursor: pointer;
-        z-index: 10; 
-        background: none; 
-        border: none; 
-        outline: none; 
+        z-index: 10;
+        background: none;
+        border: none;
+        outline: none;
 
     }
 
-    .arrowLeft {
-        left: 10px; 
+    .arrow-left {
+        left: 10px;
     }
 
-    .arrowRight {
-        right: 10px; 
+    .arrow-right {
+        right: 10px;
     }
 
     .counter {
         position: absolute;
-        bottom : 20px;
-        left : 50%;
-        color : white;
+        bottom: 20px;
+        left: 50%;
+        color: white;
         font-size: 15px;
     }
 }
+
+
+
+
+@media (max-width:768px) {
+    .slideshow {
+        margin-right: 10px;
+        margin-left: 10px;
+        height: 255px;
+        width: 335px;
+
+        .slide {
+        img {
+            border-radius: 10px;
+        }
+    }
+    }
+
+    .general-content {
+    }
+
+
+}
+
+    @media (max-width :480px) {}

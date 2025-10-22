@@ -1,4 +1,4 @@
-import '../sass/card.scss'
+import '../sass/cards.scss'
 
 function HousingItem({ title, cover }) {
 	return (

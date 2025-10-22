@@ -5,8 +5,8 @@ function Error() {
   return (
     <main>
       <h1>404</h1>
-      <p className="dontExistContent">Oups! La page que vous demandez n'existe pas.</p>
-      <Link to ="/" className="returnMainPage">Retourner sur la page d'accueil</Link>
+      <p className="error-text">Oups! La page que vous demandez n'existe pas.</p>
+      <Link to ="/" className="home-link">Retourner sur la page d'accueil</Link>
     </main>
 
   )

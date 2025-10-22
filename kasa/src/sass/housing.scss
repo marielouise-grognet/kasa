@@ -1,14 +1,16 @@
-.descriptionBox {
+.general-content {
+    max-width: 1240px;
     display: flex;
     text-align: left;
     margin: 0 40px;
     justify-content: space-between;
 
-    .titleTownSpecificities {
+    .housing-characteristic {
         margin-right: 40px;
         margin-top: 10px;
+        width : 50%;
 
-        h1 {
+        .housing-title {
             color: #FF6060;
             font-size: 30px;
             font-weight: 500;
@@ -31,20 +33,20 @@
         }
     }
 
-    .hostAndRating {
-        .hostIdentity {
+    .host-rating-container {
+        .host-info {
             display: flex;
             gap: 20px;
             margin-top: 30px;
 
-            .hostName {
+            .host-name {
                 width: 50px;
                 color: #FF6060;
                 margin-right: 20px;
             }
 
 
-            .hostPicture {
+            .host-picture {
                 border-radius: 50%;
                 width: 64px;
                 height: 64px;
@@ -57,13 +59,12 @@
             margin-top: 50px;
             justify-content: flex-end;
 
-            .star {
-                font-size: 1.5rem; 
+            .star-empty {
                 font-weight: 900; 
                 color: #E3E3E3;
             }
 
-            .star.filled {
+            .star-filled {
                 color: #FF6060;
             }
         }
@@ -78,3 +79,15 @@
         width: 50%;
     }
 }
+
+ @media (max-width:768px) {
+  .housing-characteristic {
+    width: 100%;
+    margin-right: 0;
+
+    .housing-title {
+
+    }
+
+}
+ }

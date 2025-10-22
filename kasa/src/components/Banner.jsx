@@ -1,12 +1,19 @@
-import background from '../assets/Background.png'
+import PropTypes from "prop-types"
+import "../sass/home.scss"
 
-function Banner() {
+function Banner({ image, text }) {
     return (
         <div className="banner-container">
-            <img src={background} alt="Background" className="banner-img" />
-            <h1 className="banner-text">Chez vous, partout et ailleurs</h1>
+            <img src={image} alt="Bannière" className="banner-img" />
+            {text && <h1 className="banner-text">{text}</h1>}
         </div>
     )
+}
+
+
+Banner.propTypes = {
+    image: PropTypes.string.isRequired,
+    text: PropTypes.string,
 }
 
 export default Banner
