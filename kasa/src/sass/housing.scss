@@ -7,25 +7,24 @@
 
     .housing-characteristic {
         margin-right: 40px;
-
-        width: 50%;
+        width: 60%;
 
         .housing-title {
             color: #FF6060;
-            font-size: 30px;
+            font-size: 36px;
             font-weight: 500;
             max-width: 600px;
-            font-size: 18px;
         }
 
         .housing-localisation {
-            font-size: 14px;
+            font-size: 18px;
         }
 
         .tags {
             display: flex;
             gap: 20px;
             margin-top: 20px;
+            flex-wrap: wrap;
 
             .tag {
                 background-color: #FF6060;
@@ -38,6 +37,8 @@
                 font-size: 14px;
                 min-width: 115px;
                 min-height: 25px;
+                padding-right : 15px;
+                padding-left: 15px;
             }
         }
     }

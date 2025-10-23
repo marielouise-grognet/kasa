@@ -1,15 +1,20 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
 
 
 
+
+
 .banner-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 1280px;
   margin: 0 30px;
+
 
   .banner-img {
     width: 100%;
@@ -21,29 +26,25 @@
 
   .banner-text {
     position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
-    font-size: clamp(1.5rem, 5vw, 2.5rem); /* taille responsive */
-    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     max-width: 90%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    font-size: 48px ;
   }
-
 
 
 
 
 }
 
-  @media (max-width:768px) {
-    
-    .banner-container {
-      margin-right: 10px;
-      margin-left: 10px;
- 
+@media (max-width:768px) {
+
+  .banner-container {
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: flex-start;
+
+
 
     .banner-img {
       border-radius: 10px;
@@ -52,30 +53,10 @@
 
     .banner-text {
       font-size: 24px;
-      text-align: left;
-      width : 225px;
-      top : 10%;
-      left :40%;
       margin-left: 20px;
+      width : 225px; 
+      text-align: start;
     }
   }
 
-  @media (max-width :480px) {
-      .banner-text {
-      top : 10%;
-      left :35%;
-      margin-left: 20px;
-
     }
-
-  }
-     }
-
-
-
-
-
-
-
-
-
