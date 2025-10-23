@@ -1,11 +1,12 @@
 import '../sass/cards.scss'
 
+
 function HousingItem({ title, cover }) {
 	return (
-        <div>
+		<div>
 			<h2 className='housing-name'>{title}</h2>
-			<img className='housing-img' src={cover} alt={`${title}`}/>
-        </div>
+			<img className='housing-img' src={cover} alt={`${title}`} />
+		</div>
 	)
 }
 

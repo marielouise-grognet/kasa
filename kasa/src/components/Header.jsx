@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import logo from '../assets/LOGO.png'
 import '../sass/index.scss'
 
+
 function Header() {
   return (
     <nav className="navbar">

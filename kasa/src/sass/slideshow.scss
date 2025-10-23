@@ -1,4 +1,3 @@
-
 .slideshow {
     max-width: 1240px;
     height: 415px;
@@ -29,7 +28,6 @@
         background: none;
         border: none;
         outline: none;
-
     }
 
     .arrow-left {
@@ -50,8 +48,6 @@
 }
 
 
-
-
 @media (max-width:768px) {
     .slideshow {
         margin-right: 10px;
@@ -60,16 +56,9 @@
         min-width: 335px;
 
         .slide {
-        img {
-            border-radius: 10px;
+            img {
+                border-radius: 10px;
+            }
         }
     }
-    }
-
-    .general-content {
-    }
-
-
 }
-
-    @media (max-width :480px) {}

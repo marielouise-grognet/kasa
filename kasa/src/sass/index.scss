@@ -3,84 +3,80 @@
 
 :root {
   font-family: 'Montserrat';
-  display: flex;
-  justify-content: center;
 
-
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 40px;
-
-  .nav-links {
+  body {
     display: flex;
-    gap: 50px;
-    height:20px;
-    margin-top: 20px;
-    font-weight: 500;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px;
 
-    a {
-      text-decoration: none;
-      color: #000;
-      &.active {
-        border-bottom: 1px solid black; 
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      height: 20px;
+      margin-top: 20px;
+      font-weight: 500;
+
+      a {
+        text-decoration: none;
+        color: #000;
+
+        &.active {
+          border-bottom: 1px solid black;
+        }
       }
-
     }
   }
-}
 
-.footer {
-  background-color: black;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height : 209px;
+  .footer {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 209px;
+    margin-top: 30px;
 
-  margin-top : 30px;
-
-  .copyright {
-    color : white;
-    size: 24px;
+    .copyright {
+      color: white;
+      size: 24px;
+    }
   }
-}
+
 
   @media (max-width:768px) {
-    
-  .navbar {
-      margin-right :  10px;
+    .navbar {
+      margin-right: 10px;
       margin-left: 10px;
 
-    .logo {
-      height : 46.88px;
-      width : 145px;
+      .logo {
+        height: 46.88px;
+        width: 145px;
+      }
+
+      a {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
     }
 
-    a {
-      font-size: 12px;
-      text-transform: uppercase;
-      font-weight: 500;
+    .footer {
+      justify-content: center;
+      align-items: center;
+
+      .copyright {
+        font-size: 12px;
+        width: 130px;
+      }
     }
   }
-  
-  .footer {
-    justify-content: center;
-    align-items: center;
-    .copyright {
-      font-size : 12px;
-      width:130px;
-
-
-    }
-  }
-  
-
-  }
-
-
-
 }

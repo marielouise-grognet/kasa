@@ -37,7 +37,7 @@
                 font-size: 14px;
                 min-width: 115px;
                 min-height: 25px;
-                padding-right : 15px;
+                padding-right: 15px;
                 padding-left: 15px;
             }
         }
@@ -59,14 +59,12 @@
                 justify-content: center;
 
                 .first-name {
-                    margin:0;
+                    margin: 0;
                 }
 
                 .last-name {
-                    margin : 0;
+                    margin: 0;
                 }
-
-
             }
 
 
@@ -105,15 +103,12 @@
 }
 
 
-
 @media (max-width:768px) {
     .general-content {
         display: flex;
         flex-direction: column;
         margin-right: 10px;
         margin-left: 10px;
-
-
 
         .housing-characteristic {
             width: 100%;
@@ -147,7 +142,6 @@
             margin-top: 10px;
             margin-bottom: 10px;
 
-
             .rating {
                 margin: 0;
                 width: 98px;
@@ -169,15 +163,12 @@
                 }
             }
         }
-
-
     }
 
     .collapses {
         flex-direction: column;
         margin-right: 10px;
         margin-left: 10px;
-
 
         .collapse {
             width: 100%;
@@ -187,10 +178,7 @@
             .collapse-header {
                 width: 100%;
                 display: flex;
-
             }
-
-
         }
     }
 }

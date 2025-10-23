@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '../sass/slideshow.scss'
 
+
 function Slideshow({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0)
     const length = images.length

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 
+
 export default function useHousing() {
     const [housingList, setHousingList] = useState([])
     const [loading, setLoading] = useState(true)

@@ -1,11 +1,10 @@
 #root {
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-
-
-
 
 .banner-container {
   position: relative;
@@ -14,7 +13,6 @@
   align-items: center;
   max-width: 1280px;
   margin: 0 30px;
-
 
   .banner-img {
     width: 100%;
@@ -29,34 +27,26 @@
     color: white;
     font-size: clamp(1.5rem, 5vw, 2.5rem);
     max-width: 90%;
-    font-size: 48px ;
+    font-size: 48px;
   }
-
-
-
-
 }
 
-@media (max-width:768px) {
 
+@media (max-width:768px) {
   .banner-container {
     margin-right: 10px;
     margin-left: 10px;
     justify-content: flex-start;
 
-
-
     .banner-img {
       border-radius: 10px;
-
     }
 
     .banner-text {
       font-size: 24px;
       margin-left: 20px;
-      width : 225px; 
+      width: 225px;
       text-align: start;
     }
   }
-
-    }
+}
