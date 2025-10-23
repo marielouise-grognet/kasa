@@ -1,8 +1,6 @@
 main {
     margin-bottom: 100px;
 
-
-
 h1 {
     font-size : 200px;
     color : #FF6060;
@@ -18,5 +16,26 @@ h1 {
 .home-link {
     color : black;
 }
+
+}
+
+@media (max-width:768px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    h1 {
+        font-size: 96px;
+    }
+
+    .error-text {
+        font-size: 18px;
+        text-align: center;
+        width : 260px;
+    }
+
+    }
 
 }

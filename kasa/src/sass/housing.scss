@@ -15,11 +15,11 @@
             font-size: 30px;
             font-weight: 500;
             max-width: 600px;
+            font-size: 18px;
         }
 
         .housing-localisation {
-            font-size: 18px;
-
+            font-size: 14px;
         }
 
         .tags {
@@ -36,8 +36,8 @@
                 color: white;
                 font-weight: 700;
                 font-size: 14px;
-                width: 115px;
-                height: 25px;
+                min-width: 115px;
+                min-height: 25px;
             }
         }
     }
@@ -143,8 +143,8 @@
             flex-direction: row-reverse;
             justify-content: space-between;
             align-items: center;
-            margin-top: 20px;
-
+            margin-top: 10px;
+            margin-bottom: 10px;
 
 
             .rating {
@@ -159,9 +159,7 @@
 
                 .host-name {
                     font-size: 12px;
-
                     margin: 0;
-            
                 }
 
                 .host-picture {
@@ -191,9 +189,7 @@
 
             }
 
-            .collapse-content {
 
-            }
         }
     }
 }
