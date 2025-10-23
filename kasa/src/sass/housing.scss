@@ -7,14 +7,19 @@
 
     .housing-characteristic {
         margin-right: 40px;
-        margin-top: 10px;
-        width : 50%;
+
+        width: 50%;
 
         .housing-title {
             color: #FF6060;
             font-size: 30px;
             font-weight: 500;
-            width: 600px;
+            max-width: 600px;
+        }
+
+        .housing-localisation {
+            font-size: 18px;
+
         }
 
         .tags {
@@ -24,11 +29,15 @@
 
             .tag {
                 background-color: #FF6060;
-                padding: 10px 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border-radius: 10px;
                 color: white;
                 font-weight: 700;
                 font-size: 14px;
+                width: 115px;
+                height: 25px;
             }
         }
     }
@@ -36,13 +45,27 @@
     .host-rating-container {
         .host-info {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             margin-top: 30px;
+            justify-content: space-between;
 
             .host-name {
-                width: 50px;
+                display: flex;
+                flex-direction: column;
                 color: #FF6060;
-                margin-right: 20px;
+                font-size: 18px;
+                text-align: right;
+                justify-content: center;
+
+                .first-name {
+                    margin:0;
+                }
+
+                .last-name {
+                    margin : 0;
+                }
+
+
             }
 
 
@@ -60,7 +83,7 @@
             justify-content: flex-end;
 
             .star-empty {
-                font-weight: 900; 
+                font-weight: 900;
                 color: #E3E3E3;
             }
 
@@ -80,14 +103,97 @@
     }
 }
 
- @media (max-width:768px) {
-  .housing-characteristic {
-    width: 100%;
-    margin-right: 0;
 
-    .housing-title {
+
+@media (max-width:768px) {
+    .general-content {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-left: 10px;
+
+
+
+        .housing-characteristic {
+            width: 100%;
+            margin-right: 0;
+
+            .housing-title {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .housing-localisation {
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .tags {
+                .tag {
+                    font-size: 10px;
+                    width: 84px;
+                    height: 18px;
+
+                }
+            }
+        }
+
+        .host-rating-container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+
+
+
+            .rating {
+                margin: 0;
+                width: 98px;
+                height: 18px;
+            }
+
+            .host-info {
+                margin: 0;
+
+
+                .host-name {
+                    font-size: 12px;
+
+                    margin: 0;
+            
+                }
+
+                .host-picture {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+
 
     }
 
+    .collapses {
+        flex-direction: column;
+        margin-right: 10px;
+        margin-left: 10px;
+
+
+        .collapse {
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 5px;
+
+            .collapse-header {
+                width: 100%;
+                display: flex;
+
+            }
+
+            .collapse-content {
+
+            }
+        }
+    }
 }
- }

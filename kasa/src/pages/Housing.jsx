@@ -14,15 +14,17 @@ function Housing() {
   if (loading) return <p>Chargement...</p>
   if (error || !housing) return <Navigate to="/*" />
 
-
+  // 💡 On découpe le nom complet
+  const [firstName, lastName] = housing.host.name.split(' ')
 
   return (
     <div className="main">
       <Slideshow images={housing.pictures} />
+
       <div className="general-content">
         <div className="housing-characteristic">
           <h1 className="housing-title">{housing.title}</h1>
-          <p>
+          <p className="housing-localisation">
             {(() => {
               const parts = housing.location.split(' - ')
               if (parts.length === 2) {
@@ -42,8 +44,11 @@ function Housing() {
 
         <div className="host-rating-container">
           <div className="host-info">
-            <p className='host-name'>{housing.host.name}</p>
-            <img src={housing.host.picture} alt={housing.host.name} className='host-picture' />
+            <div className="host-name">
+              <p className="first-name">{firstName}</p>
+              <p className="last-name">{lastName}</p>
+            </div>
+            <img src={housing.host.picture} alt={housing.host.name} className="host-picture" />
           </div>
 
           <div className="rating">
